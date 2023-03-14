@@ -1,0 +1,115 @@
+main {
+    padding: 0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.your-favorite-info {
+    display: flex;
+    align-items: end;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.your-favorite-info > div:last-child {
+    color: #6B6B6B;
+    margin-left: 100px;
+}
+
+/* FAVORITE-PRODUCT */
+
+.favorite-product {
+    margin-left: -20px;
+    transition: .3s;
+}
+
+.favorite-product:hover {
+    transform: scale(1.03);
+}
+
+/* FAVORITE-ICON */
+
+.favorite-button {
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 15px;
+}
+
+.favorite-button i {
+    color: #fff;
+    padding: 7px;
+    border-radius: 100%;
+    background-color: #000;
+    font-size: 24px;
+}
+
+.favorite-button button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* FAVORITE-PRODUCT-PHOTO */
+
+.favorite-product-photo img {
+    width: 330px;
+    height: 390px;
+}
+
+/* FAVORITE-PRODUCT-PRICE */
+
+.favorite-product-price {
+    position: absolute;
+    background: rgba(231, 241, 252, 0.62);
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: -104px;
+    margin-left: 14px;
+    padding: 10px 10px;
+    width: 282px;
+}
+
+.favorite-product-price p:last-child {
+    font-weight: 400;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #DFEAEB;
+    height: 300px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav ul li {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+footer nav ul li:hover {
+    text-decoration: underline 1.5px;
+}
+
+footer h2 {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 75%;
+    margin-top: 13%;
+}

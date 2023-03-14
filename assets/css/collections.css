@@ -1,0 +1,154 @@
+main {
+    padding: 0 100px;
+}
+
+
+/* FILTERS */
+
+body button[type="button"] {
+    text-transform: none;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #9E8879;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 87%;
+    outline: none;
+}
+
+body button[type="button"]:hover, body button[type="button"]:focus-within {
+    background-color: #907a6b;
+}
+
+body button[type="button"]:focus-within .filters-content {
+    display: block;
+}
+
+
+.filters-content {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    margin-top: .3%;
+    margin-left: -16.2%;
+    height: 310px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 999;
+}
+
+.filters-content p:nth-of-type(2) {
+    margin-right: 25px;
+}
+
+.filters-content p:nth-of-type(3) {
+    margin-right: 25px;
+}
+
+.filters-content ul:last-child{
+    position: absolute;
+    margin-top: -24px;
+    margin-left: 80px;
+}
+
+.filters-list-title {
+    display: inline;
+    text-align: left;
+    color: #000;
+    padding: 0 25px 0 0;
+    border-bottom: 2px solid #000;
+    margin-left: -250px;
+    text-transform: none;
+}
+
+.filters-list {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;    
+    width: 350px;
+}
+
+.filters-list li a {
+    color: #000;
+    font-size: 18px;
+}
+
+.filters-list li {
+    padding: 5px 10px;
+}
+
+/* MAIN */
+
+.collections {
+    margin-top: 30px;
+}
+
+.collection {
+    margin-top: 40px;
+}
+
+.collection-title {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.collection-title__name {
+    background-color: #9E8879;
+    height: 40px;
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.collection-content {
+    margin-top: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    overflow: hidden;
+}
+
+.collection-content img {
+    height: 100%;
+    transition: .3s;
+}       
+
+.collection-content img:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #D6B292;
+    height: 350px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav ul li {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+footer h2 {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 75%;
+    margin-top: 13%;
+}

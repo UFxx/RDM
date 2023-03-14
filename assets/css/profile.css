@@ -1,0 +1,331 @@
+.header-nav__item-login i {
+    position: relative;
+    color: #CACACA;
+}
+
+.header-nav__item-login:before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    top: -7px;
+    left: -10px;
+}   
+
+.user-card-and-payment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* USER-CARD */
+
+.user-card {
+    background-color: #F3F4F9;
+    display: flex;
+    padding: 5px 40px 5px 40px;
+}
+
+/* USER-CARD-PHOTO */
+
+.user-card-photo {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-card-photo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+/* USER-CARD-INFO */
+
+.user-card-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    text-align: center;
+}
+
+/* USER-CARD-NAME */
+
+.user-card-name {
+    font-size: 28px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* USER-CARD-DELIVERY */
+
+.user-card-delivery-adress {
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.630);
+}
+
+/* PAYMENT */
+
+.payment button {
+    background-color: #E6E9EF;
+    padding: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.payment i {
+    color: black;
+    font-size: 24px;
+}
+
+/* PROFILE-INFO */
+
+.profile-info {
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* LEFT-CONTENT */
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-content > div {
+    margin-top: 30px;
+}
+
+/* FAVORITE-GOODS */
+
+.favorite-goods {
+    background: rgba(186, 207, 216, 0.25);
+    box-shadow: 0px 4px 5px -1px rgba(88, 129, 207, 0.43);
+    height: 100px;
+    width: 400px;
+    padding: 20px ;
+}
+
+.favorite-goods p:first-child {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.favorite-goods-favorite-counter {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.430);
+    margin-top: 10px;
+}
+
+.favorite-goods:hover .hole-goods {
+    background-color: #fff;
+}
+
+/* HOLES (hover) */
+
+.holes-goods {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: -90px;
+    margin-left: 370px;
+}
+
+.hole-goods {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(208, 224, 224, 0.48);
+    border-radius: 100%;
+}
+
+/* FAVORITE-BRANDS */
+
+.favorite-brands{
+    background: rgba(186, 207, 216, 0.25);
+    box-shadow: 0px 4px 5px -1px rgba(88, 129, 207, 0.43);
+    height: 70px;
+    width: 400px;
+    padding: 20px ;
+}
+
+.favorite-brands p:first-child {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.favorite-brands-favorite-counter {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.430);
+    margin-top: 10px;
+}
+
+.favorite-brands:hover .hole-brands{
+    background-color: #fff;
+}
+
+/* HOLES (hover) */
+
+.holes-brands {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    margin-top: -80px;
+    margin-left: 385px;
+}
+
+.hole-brands {
+    width: 23px;
+    height: 23px;
+    background: rgba(225, 223, 244, 0.63);
+    border-radius: 100%;
+}
+
+/* PROMOCODE */
+
+.promocode {
+    font-family: 'PT Sans Caption';
+    font-weight: 400;
+    font-size: 24px;
+    background: #F3F4F6;
+    box-shadow: 0px 4px 5px -1px rgba(88, 129, 207, 0.43);
+    width: 350px;
+    height: 100px;
+    padding: 10px 30px;
+}
+
+.promocode input {
+    padding: 0 20px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.promocode input:focus {
+    outline: none;
+}
+
+.promocode input::placeholder {
+    color: rgba(126, 126, 126, 0.21);
+}
+
+/* RIGHT-CONTENT */
+
+.right-content > div {
+    margin-top: 30px;
+}
+
+/* YOUR-SAVED-APPEARANCE */
+
+.your-saved-appearance {
+    background: rgba(207, 235, 244, 0.25);
+    box-shadow: 0px 4px 5px -1px rgba(88, 129, 207, 0.43);
+    width: 400px;
+    height: 210px;
+    margin-top: 30px;
+    padding: 20px 20px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.your-saved-appearance:hover .hole-appearance{
+    background-color: #fff;
+}
+
+/* YOUR-SAVED-APPEARANCE-ICON*/
+
+.your-saved-appearance-icon i {
+    color: white;
+    font-size: 120px;
+    margin-top: -35px;
+    margin-left: 20px;
+}
+
+/* YOUR-SAVE-APPEARANCE-DESCRIPTION */
+
+.your-saved-appearance-description p {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.43);
+}
+
+/* BONUS-COUNTER */
+
+.bonus-counter {
+    background: rgba(215, 240, 243, 0.25);
+    box-shadow: 0px 4px 5px -1px rgba(88, 129, 207, 0.43);
+    width: 370px;
+    height: 100px;
+    margin-left: 30px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* BONUS-COUNTER-TITLE */
+
+.bonus-counter-title {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 28px;
+    color: #000000;
+    padding: 0 45px 0 0;
+}
+
+/* BONUS-COUNTER-DESCRIPTION */
+
+.bonus-counter-description {
+    margin-left: -10px;
+    font-family: 'PT Sans Caption';
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.43);
+}
+
+/* HOLES (hover) */
+
+.holes-appearance {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin-left: 220px;
+}
+
+.hole-appearance {
+    width: 17px;
+    height: 17px;
+    background: #E1E6F5;
+    border-radius: 100%;
+}
+
+/* MAIN */
+
