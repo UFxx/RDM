@@ -1,0 +1,144 @@
+.brand-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.brand-name {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 15px;
+}
+
+.brand-description {
+    color: rgba(133, 134, 171, 0.45);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.favorite button[type="button"]{
+    font-size: 28px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.brand-menu {
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.brand-menu a {
+    margin: 20px;
+    position: relative;
+    color: rgba(62, 62, 62, 1);
+}
+
+.brand-menu a:before {
+    position: absolute;
+    content:"";
+    height: 1px;
+    background-color: black;
+    width: 0;
+    display: flex;
+    margin-top: 22px;
+    transition: .3s;
+}
+
+.brand-menu a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.brand-menu a:hover::before {
+    width: 100%;
+}
+
+.active {
+    color: black;
+}
+
+.brand-menu .active:before {
+    position: absolute;
+    content:"";
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    margin-top: 22px;
+    transition: .3s;
+}
+
+/* COLLECTION */
+
+.collection {
+    background-color: rgba(108, 119, 159, 0.06);
+}
+
+.collection-name {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: black;
+}
+
+.collection-description {
+    padding: 0 50px;
+    color: rgba(65, 62, 62, 0.61);
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    width: 700px;
+}
+
+.collection-img {
+    margin-top: 40px;
+}
+
+.collection-img img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #DFEAEB;
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav ul li {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+footer nav ul li:hover {
+    text-decoration: underline 1.5px;
+}
+
+footer h2 {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 75%;
+    margin-top: 13%;
+}

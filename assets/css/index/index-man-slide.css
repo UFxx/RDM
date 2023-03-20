@@ -1,0 +1,122 @@
+/* man-CONTENT */
+
+.man-content {
+    display: flex;
+    justify-content: center;
+}
+
+.man-content > div h1, p {
+    color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+/* man-COLLECTION */
+
+.man-collection {
+    width: 500px;
+    height: 400px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 10px;
+    overflow: hidden;
+    background: url(5575333800_2_4_1.jpg);
+}
+
+.man-collection-imgs {
+    display: flex;
+}
+
+.man-collection img {
+    width: 250px;
+    height: 400px;
+    transition: .3s ease;
+}
+
+.man-collection img:hover {
+    transform: scale(1.03);
+}
+
+.man-collection h1 {
+    top: 70%;
+    margin-left: 15px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  50px;
+    line-height: 94px;
+}
+
+.man-collection p {
+    top: 88%;
+    margin-left: 15%;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.man-collection p:first-child {
+    top: 70%;
+    letter-spacing: 5px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/* man-SALE */
+
+.man-sale {
+    width: 450px;
+    height: 400px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+.man-sale img {
+    width: 150px;
+    height: 400px;
+    transition: .3s;
+}
+
+.man-sale img:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.man-sale h1 {
+    top: 82%;
+    margin-left: 30px;
+    font-size: 48px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.man-sale p {
+    top: 86%;
+    margin-left: 70%;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+.man-additional-content {
+    margin-top: 40px;
+}
+
+.man-additional-content >div p {
+    color: black;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+}

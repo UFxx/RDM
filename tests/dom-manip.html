@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/tests/css/dom-manip.css">
+    <title>Манипуляции c DOM</title>
+</head>
+<body>
+    <div class="product__characteristics">
+        <input type="text" placeholder="Цвет" id="product__color">
+        <input type="text" placeholder="Цена" id="product__price">
+        <div class="add-size">
+            <input type="text" placeholder="Добавить размер" id="product__size" onkeypress="handleKeyPress(event)" value="">
+            <ul class="product-size-added">
+            </ul>
+        </div>
+        <input type="text" placeholder="Город производства" id="product__city">
+       <div class="add-characteristics">
+        <button id="btn">
+            <div class="add-hue__icon"><i class="fas fa-plus"></i></div>
+        </button>
+       </div>
+    </div>
+    <script src="js/dom-manip.js"></script>
+</body>
+</html>

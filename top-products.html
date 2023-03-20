@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/header-style.css">
+    <link rel="stylesheet" href="assets/css/footer-style.css">
+    <link rel="stylesheet" href="assets/css/top-products.css">
+    <title>Лучшее</title>
+</head>
+<header class="header">
+    <div class="header-menu">
+        <button type="button"><i class="fas fa-bars"></i>
+            <div class="header-main-menu">
+                <i class="fas fa-bars"></i>
+                <ul class="header-main-menu-list">
+                    <li class="header-main-menu__item"></li> <!-- li for line -->
+                    <li class="header-main-menu__item"><a href="/brand-collection.html">Бренды</a></li>
+                    <li class="header-main-menu__item"><a href="/new-products.html">Новинки</a></li>
+                    <li class="header-main-menu__item"><a href="/top-products.html">Лучшее</a></li>
+                    <li class="header-main-menu__item"><a href="/sale.html">Скидки</a></li>
+                </ul>
+            </div>
+        </button>
+    </div>
+    <div class="header-logo"><h1><a href="/index.html">РОСГОСШЛЁПКИ</a></h1></div>
+    <nav class="header-nav">
+        <ul class="header-nav-list">
+            <li class="header-nav-list__item header-nav__item-search"><a href="#"><input type="search" name="header-search" id="header-search" placeholder="Поиск"></a></li>
+            <li class="header-nav-list__item header-nav__item-login"><a href="/profile.html"><i class="fas fa-user"></i></a></li>
+            <li class="header-nav-list__item header-nav__item-shopping-cart"><a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a></i></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <div class="top-products__slider-content">
+            <div class="slider-line">
+                <button id="arrow__slide-left" onclick="leftSlide()"></button>
+                <div class="slider__item">
+                    <a href=""><img src="assets/img/top-products/slider__item-img.png" alt="" class="slider__img"></a>
+                </div>
+                <div class="slider__item">
+                    <a href=""><img src="assets/img/top-products/slider__item-img.png" alt="" class="slider__img"></a>
+                </div>
+                <div class="slider__item">
+                    <a href=""><img src="assets/img/top-products/slider__item-img.png" alt="" class="slider__img"></a>
+                </div>
+                <div class="unactive-imgs">
+                    <div class="slider__item unactive">
+                        <a href=""><img src="assets/img/top-products/slider__item-img.png" alt="" class="slider__img"></a>
+                    </div>
+                    <div class="slider__item unactive">
+                        <a href=""><img src="assets/img/top-products/slider__item-img.png" alt="" class="slider__img"></a>
+                    </div>
+                    <div class="slider__item unactive">
+                        <a href=""><img src="assets/img/top-products/slider__item-img.png" alt="" class="slider__img"></a>
+                    </div>
+                    <div class="slider__item unactive">
+                        <a href=""><img src="assets/img/top-products/slider__item-img.png" alt="" class="slider__img"></a>
+                    </div>
+                </div>
+                <button id="arrow__slide-right" onclick="rightSlide()"></button>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <a href=""><img src="/assets/img/profile/profile-product-img.png" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="/assets/img/profile/profile-product-img.png" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="/assets/img/profile/profile-product-img.png" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="/assets/img/profile/profile-product-img.png" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="/assets/img/profile/profile-product-img.png" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="/assets/img/profile/profile-product-img.png" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="/assets/img/profile/profile-product-img.png" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="/assets/img/profile/profile-product-img.png" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/topProductsSlider.js"></script>
+</body>
+<footer class="footer">
+    <nav class="footer-nav">
+        <ul class="footer-nav-list">
+            <li class="footer-nav-list__item"><a href="#">О нас</a></li>
+            <li class="footer-nav-list__item"><a href="#">Пользовательское соглашение</a></li>
+            <li class="footer-nav-list__item"><a href="#">Разместить бренд на сайт</a></li>
+            <li class="footer-nav-list__item"><a href="#">Поддержка</a></li>
+        </ul>
+    </nav>
+    <h2 class="footer-left-text">Мода<br>России</h2>
+</footer>
+</html>

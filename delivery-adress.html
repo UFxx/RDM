@@ -10,10 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/header-style.css">
-    <link rel="stylesheet" href="assets/css/footer-style.css">
-    <link rel="stylesheet" href="assets/css/brand-profile.css">
-    <title>Профиль бренда</title>
+    <link rel="stylesheet" href="assets/css/header-style.css">
+    <link rel="stylesheet" href="assets/css/delivery-adress.css">
+    <title>Адрес доставки</title>
 </head>
 <header class="header">
     <div class="header-menu">
@@ -40,49 +39,39 @@
     </nav>
 </header>
 <body>
-    <div class="brand-card-and-payment">
-        <div class="brand-card">
-            <div class="brand-card-photo">
-                <img src="assets/img/favorite-product-photo-2.png" alt="brand-photo">
-            </div>
-            <div class="brand-card-info">
-                <div class="brand-card-name">
-                    <p>AbibasTo</p>
-                </div>
-                <div class="brand-card-delivery-adress">
-                    <p>Воронцово</p>
-                </div>
-            </div>
+    <div class="body-container">
+        <div class="adress">
+            <input type="text" id="adress" placeholder="Введите адрес">
         </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.3402245629827!2d44.62257391532492!3d43.055311498903485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405a9fe18d949671%3A0x8dfbdbd8f0dafb75!2z0JLQuNC60LDQu9C40L3QsA!5e0!3m2!1sru!2sru!4v1679210888742!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="brand-menu">
-        <a href="" class="add-product">
-            <p class="add-product__title title">Добавить товар</p>
-            <p class="add-product__description descr">Пополните свой ассортимент</p>
-        </a>
-        <a href="" class="your-drafts">
-            <p class="your-drafts__title title">Ваши черновики</p>
-            <p class="your-drafts__description descr">Заготовки товаров</p>
-        </a>
-        <a href="" class="edit-profile">
-            <p class="edit-profile__title title">Редактировать профиль</p>
-            <p class="edit-profile__description descr">Настройте профиль бренда</p>
-        </a>
-        <a href="" class="brand-bonus">
-            <p class="brand-bonus__title title">Бонусы бренда</p>
-            <p class="brand-bonus__description descr">Для привлечения клиентов</p>
-        </a>
-    </div>
+    <main>
+        <div class="payment-method-wrapper">
+            <p class="payment-method__title">Способ оплаты</p>
+            <div class="payment-method">
+                <input type="text" id="card-number" placeholder="Введите номер карты">
+                <div class="card-details">
+                    <input type="text" id="expiration-date" placeholder="YYYY-MM-DD">
+                    <input type="text" id="cvc-code" placeholder="CVC">
+                </div>
+            </div>
+            <input type="text" id="bonus" placeholder="Бонусы">
+        </div>
+            <div class="delivery">
+                <button class="delivery-button" type="button">Способ доставки<i class="fas fa-sort-down"></i>
+                    <div class="delivery-content">
+                        <ul class="delivery-list">
+                            <li class="delivery-list__item"><a href="">Почта России</a></li>
+                            <li class="delivery-list__item"><a href="">СДЭК</a></li>
+                            <li class="delivery-list__item"><a href="">BOXBERRY</a></li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+        </main>
+        <div class="buy-button-content">
+            <div class="buy-button-price"><p>40 800 р</p></div>
+            <div class="buy-button"><a href="#"><button>Оплатить</button></a></div>
+        </div>
 </body>
-<footer class="footer">
-    <nav class="footer-nav">
-        <ul class="footer-nav-list">
-            <li class="footer-nav-list__item"><a href="#">О нас</a></li>
-            <li class="footer-nav-list__item"><a href="#">Пользовательское соглашение</a></li>
-            <li class="footer-nav-list__item"><a href="#">Разместить бренд на сайт</a></li>
-            <li class="footer-nav-list__item"><a href="#">Поддержка</a></li>
-        </ul>
-    </nav>
-    <h2 class="footer-left-text">Мода<br>России</h2>
-</footer>
 </html>

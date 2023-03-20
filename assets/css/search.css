@@ -1,17 +1,10 @@
-main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 50px;
-}
-
 /* FILTERS */
 
 body button[type="button"] {
     text-transform: none;
     padding: 5px 20px;
     color: #fff;
-    background-color: #9E8879;
+    background-color: #BD8973;
     font-size: 20px;
     border: none;
     cursor: pointer;
@@ -36,6 +29,7 @@ body button[type="button"]:focus-within .filters-content {
     margin-left: -16.2%;
     height: 330px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 2;
 }
 
 .filters-content p:nth-of-type(2) {
@@ -78,83 +72,18 @@ body button[type="button"]:focus-within .filters-content {
     padding: 5px 10px;
 }
 
-/* LIMITED-SALE-ITEMS */
-
-.limited-sale__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.limited-sale__items  {
-    overflow: hidden;
-}
-
-/* LIMITED-SALE-NAME */
-
-.limited-sale-name {
-    text-transform: uppercase;
-    margin-left: 40px;
-    font-family: 'PT Sans Caption';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 47px;
-}
-
-/* LIMITED-SALE__ITEM img */
-
-.limited-sale__item img {
-    width: 280px;
-    height: 430px;
-}
-
-/* LIMITED-SALE__ITEM-PRICE (hover) */
-
-.limited-sale__item-price {
-    position: absolute;
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(203, 155, 128, 0.73);
-    width: 260px;
-    margin-top: 0;
-    color: #fff;
-    padding: 10px;
-    font-family: 'PT Sans Caption';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 47px;
-    transition: .3s ease-in-out;
-}
-
-.limited-sale__item:hover .limited-sale__item-price {
-    display: flex;
-    margin-top: -71px;
-}
-
-/* SALE */
-
-.sale {
-    margin-left: 20px;
-    margin-top: 60px;
-}
-
-/* SALE__ITEMS */
-
 .sale__items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 40px;
-    gap: 50px 50px;
 }
 
 /* SALE__ITEM */
 
 .sale__item {
     position: relative;
+    margin: 40px;
 }
 
 /* SALE-NAME */
@@ -227,35 +156,4 @@ body button[type="button"]:focus-within .filters-content {
     font-size: 14px;
     line-height: 21px;
     color: #575353;
-}
-
-/* FOOTER */
-
-footer {
-    background-color: #D6B292;
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
-    margin-top: 100px;
-}
-
-footer nav ul {
-    display: flex;
-    flex-direction: column;
-}
-
-footer nav ul li {
-    font-size: 24px;
-    text-transform: uppercase;
-    padding: 20px 0;
-}
-
-footer h2 {
-    position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    margin-left: 75%;
-    margin-top: 13%;
 }

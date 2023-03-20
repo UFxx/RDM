@@ -208,6 +208,7 @@
     width: 350px;
     height: 100px;
     padding: 10px 30px;
+    position: relative;
 }
 
 .promocode input {
@@ -228,6 +229,30 @@
 
 .promocode input::placeholder {
     color: rgba(126, 126, 126, 0.21);
+}
+
+#activate-promocode {
+    position: absolute;
+    top: 95%;
+    left: 51%;
+    background: #E5EEFF;
+    box-shadow: 0px 4px 5px -1px rgba(88, 129, 207, 0.43);
+    border: none;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #9799C6;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#activate-promocode:hover {
+    background: #d6e2f8;
 }
 
 /* RIGHT-CONTENT */
@@ -327,5 +352,78 @@
     border-radius: 100%;
 }
 
-/* MAIN */
+/* PRODUCTS */
 
+.products {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 130px;
+    column-gap: 60px;
+    background: rgba(11, 74, 120, 0.23);
+    margin-top: 100px;
+}
+
+.products__title {
+    font-family: 'PT Sans Caption';
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.product {
+    position: relative;
+}
+
+.product img {
+    width: 250px;
+    height: 370px;
+}
+
+.product__favorite {
+    position: absolute;
+    margin-top: -370px;
+    margin-left: 215px;
+}
+
+.product__favorite button[type="button"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.product__sale-and-price {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    width: 249.5px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    background: rgba(107, 133, 171, 0.5);
+    color: white;
+    margin-top: -55px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.product__name {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.product__brand {
+    color: #575353;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 16px;
+}

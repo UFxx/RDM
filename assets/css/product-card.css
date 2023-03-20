@@ -1,0 +1,46 @@
+.container {
+    margin-top: 40px;
+    background-color: #F8F8F9;
+    display: flex;
+}
+
+.product__photo {
+    height: 100px;
+    position: relative;
+}
+
+.product__photo img {
+    width: 700px;
+    height: 84.7vh;
+}
+
+.product-content {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.product__title {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+}
+
+.product__descr {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #A3A3A3;
+    margin-top: 20px;
+}
+
+.product-color__title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+}

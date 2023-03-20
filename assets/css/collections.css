@@ -91,6 +91,10 @@ body button[type="button"]:focus-within .filters-content {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
 }
 
 .collection-title__name {

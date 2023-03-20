@@ -241,7 +241,7 @@ main {
     z-index: -1;
 }
 
-.buy-button button:hover {
+.buy-button a button:hover {
     color: white;
 }
 

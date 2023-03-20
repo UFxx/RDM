@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.slider-line {
+    position: relative;
+    height: 200px;
+    width: 600px;
+    display: flex;
+    left: 0;
+    transition: .3s;
+}
+
+.woman-slider {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.main-slider {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.man-slider {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.display-block {
+    display: block;
+}
+
+.slider-buttons {
+    position: absolute;
+    margin-top: 100px;
+    display: flex;
+}
+
+.slider-buttons button[type="button"] {
+    text-transform: uppercase;
+    text-align: center;
+    background: none;
+    border: 1px sollid black;
+    font-size: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.slider-buttons div {
+    padding: 0 30px;
+}

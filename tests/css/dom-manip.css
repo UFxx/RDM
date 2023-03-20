@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div input {
+    background: #ECF1F3;
+    border: 4px dashed #C7D5E0;
+    outline: none;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    transition: .3s;
+}
+
+div input:hover {
+    box-shadow: 0px 0px 0px 4px #C7D5E0;
+}
+
+div input:focus {
+    box-shadow: 0px 0px 0px 4px #C7D5E0;
+}
+
+
+div input::placeholder {
+    transition: .3s;
+}
+
+div input:focus::placeholder {
+    transform: translateY(-35px);
+} 
+
+.product__characteristics {
+    display: flex;
+    column-gap: 40px;
+}
+
+.add-characteristics {
+    background: #ECF1F3;
+    border: 4px dashed #C7D5E0;
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: box-shadow .3s linear;
+}   
+
+.product__characteristics input {
+    padding-left: 10px;
+}
+
+.add-characteristics button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgba(201, 199, 224, 1);
+    cursor: pointer;
+}
+
+.add-characteristics:hover {
+    box-shadow: 0px 0px 0px 4px #C7D5E0;
+}
+
+.add-size ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 226px;
+    margin-top: 4px;
+}
+
+.list-item {
+    list-style: none;
+    width: 95.5%;
+    padding: 5px;
+    background: #A8ADBF;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #F4F5F5;
+    line-height: 31px;
+    text-align: center;
+    border-top: 5px solid white;
+}

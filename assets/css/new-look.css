@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+}
+.item {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.item__photo {
+    display: flex;
+}
+
+.item__photo a {
+    transition: .3s;
+    width: 100%;
+}
+
+.item__photo a img {
+    width: 100%;
+    height: 600px;
+}
+
+.item__photo a:hover {
+    transform: scale(1.03);
+}
+
+.item__name {
+    display: flex;
+    align-items: center;
+}
+
+.red-line {
+    width: 170px;
+    height: 6px;
+    background-color: red; 
+    margin: 0 30px;
+}
+
+.item__name-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 36px;
+    color: #242424;
+}
+
+.item__name-brand {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #3F3F3F;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 140px;
+}

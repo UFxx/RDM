@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/header-style.css">
     <link rel="stylesheet" href="assets/css/footer-style.css">
-    <link rel="stylesheet" href="assets/css/brand-profile.css">
-    <title>Профиль бренда</title>
+    <link rel="stylesheet" href="assets/css/header-style.css">
+    <link rel="stylesheet" href="assets/css/add-product.css">
+    <title>Добавление товара</title>
 </head>
 <header class="header">
     <div class="header-menu">
@@ -40,39 +40,46 @@
     </nav>
 </header>
 <body>
-    <div class="brand-card-and-payment">
-        <div class="brand-card">
-            <div class="brand-card-photo">
-                <img src="assets/img/favorite-product-photo-2.png" alt="brand-photo">
+    <main>
+        <div class="product__photo">
+            <div class="photo"><img src="assets/img/add-product/add-product-img.png" alt=""></div>
+            <button type="button"><div class="photo"><i class="fas fa-plus"></i></div></button>
+        </div>
+        <div class="add-hue">
+            <button>
+                <div class="add-hue__text">Добавить оттенок</div>
+                <div class="add-hue__icon"><i class="fas fa-plus"></i></div>
+            </button>
+        </div>
+        <div class="product-info">
+            <div class="product__name">
+                <input type="text" placeholder="Название" id="product__name">
             </div>
-            <div class="brand-card-info">
-                <div class="brand-card-name">
-                    <p>AbibasTo</p>
+            <div class="product__descr">
+                <input type="text" placeholder="Описание" id="product__descr">
+            </div>
+            <div class="product__characteristics">
+                <input type="text" placeholder="Цвет" id="product__color">
+                <input type="text" placeholder="Цена" id="product__price">
+                <div class="add-size">
+                    <input type="text" placeholder="Добавить размер" id="product__size" onkeypress="handleKeyPress(event)" value="">
+                    <ul class="product-size-added">
+                    </ul>
                 </div>
-                <div class="brand-card-delivery-adress">
-                    <p>Воронцово</p>
-                </div>
+                <input type="text" placeholder="Город производства" id="product__city">
+               <div class="add-characteristics">
+                <button id="btn">
+                    <div class="add-hue__icon"><i class="fas fa-plus"></i></div>
+                </button>
+               </div>
             </div>
         </div>
-    </div>
-    <div class="brand-menu">
-        <a href="" class="add-product">
-            <p class="add-product__title title">Добавить товар</p>
-            <p class="add-product__description descr">Пополните свой ассортимент</p>
-        </a>
-        <a href="" class="your-drafts">
-            <p class="your-drafts__title title">Ваши черновики</p>
-            <p class="your-drafts__description descr">Заготовки товаров</p>
-        </a>
-        <a href="" class="edit-profile">
-            <p class="edit-profile__title title">Редактировать профиль</p>
-            <p class="edit-profile__description descr">Настройте профиль бренда</p>
-        </a>
-        <a href="" class="brand-bonus">
-            <p class="brand-bonus__title title">Бонусы бренда</p>
-            <p class="brand-bonus__description descr">Для привлечения клиентов</p>
-        </a>
-    </div>
+        <div class="action-buttons" id="action-buttons">
+            <button id="add-post">Выложить</button>
+            <button id="add-draft">Сохранить в черновик</button>
+        </div>
+    </main>
+    <script src="assets/js/addSize.js"></script>
 </body>
 <footer class="footer">
     <nav class="footer-nav">

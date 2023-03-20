@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/header-style.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index/index-man-slide.css">
+    <link rel="stylesheet" href="assets/css/index/index-woman-slide.css">
+    <link rel="stylesheet" href="assets/css/index/index-slider.css">
+    <link rel="stylesheet" href="assets/css/header-style.css">
+    <link rel="stylesheet" href="assets/css/index/style.css">
     <title>Главная</title>
 </head>
     <div class="content">
@@ -18,9 +25,9 @@
                         <i class="fas fa-bars"></i>
                         <ul class="header-main-menu-list">
                             <li class="header-main-menu__item"></li> <!-- li for line -->
-                            <li class="header-main-menu__item"><a href="">Бренды</a></li>
-                            <li class="header-main-menu__item"><a href="">Новинки</a></li>
-                            <li class="header-main-menu__item"><a href="">Лучшее</a></li>
+                            <li class="header-main-menu__item"><a href="/brand-collection.html">Бренды</a></li>
+                            <li class="header-main-menu__item"><a href="/new-products.html">Новинки</a></li>
+                            <li class="header-main-menu__item"><a href="/top-products.html">Лучшее</a></li>
                             <li class="header-main-menu__item"><a href="/sale.html">Скидки</a></li>
                         </ul>
                     </div>
@@ -36,7 +43,7 @@
             </nav>
         </header>
         <body class="body">
-            <button type="button">Фильтры
+            <button class="filters-button" type="button">Фильтры
                 <div class="filters-content">
                     <p class="filters-list-title">Стиль</p>
                     <ul class="filters-list">
@@ -71,54 +78,122 @@
                 <p>Видос</p>
             </div>
             <main class="main">
-                <div class="main-content">
-                    <div class="main-collection__arrow-slider-left">
-                        <a href=""><img src="/assets/img/arrow-slider.png" alt="arrow-left"></a>
-                    </div>
-                    <div class="main-collection">
-                        <h1 class="main-collection__title">Коллекция</h1>
-                        <p class="main-collection__brand-name">Название и бренд</p>
-                        <div class="sliders">
-                            <div class="slider"></div>
-                            <div class="slider"></div>
-                            <div class="slider"></div>
+                <div class="slider-line">
+                    <div class="main-slide">
+                        <div class="main-content">
+                            <div class="main-collection__arrow-slider-left">
+                                <button class="main-slider-left" type="button" onclick="myFunction()"><img src="assets/img/index/arrow-slider.png" alt="arrow-left"></button>
+                            </div>
+                            <div class="main-collection">
+                                <h1 class="main-collection__title">Коллекция</h1>
+                                <p class="main-collection__brand-name">Название и бренд</p>
+                                <div class="main-collection-slider-line">
+                                    <img src="/tests/img/main-collection-img.webp" alt="">
+                                    <img src="/tests/img/main-collection-img.webp" alt="">
+                                    <img src="/tests/img/main-collection-img.webp" alt="">
+                            </div>
+                            </div>
+                            <div class="main-collection__arrow-slider-right">
+                                <button class="main-slider-right" type="button"><img src="assets/img/index/arrow-slider.png" alt="arrow-left"></button>
+                            </div>
+                            <div class="main-sale">
+                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
+                                <h1 class="main-sale-title">Распродажа</h1>
+                                <p class="main-sale-month">Январь</p>
+                            </div>
                         </div>
-                        <a href="/collections.html"><img src="/assets/img/main-collection-img.webp" alt="collection" class="main-collection__img"></a>
+                        <div class="additional-content">
+                            <div class="new-look">
+                                <h1 class="new-look-title">Новый взгляд</h1>
+                                <a href="/new-look.html"><img src="assets/img/index/new-look-preview-page.png" alt=""></a>
+                            </div>
+                            <div class="brand-selection">
+                                <h1 class="brand-selection-title">Подборка брендов</h1>
+                                <a href="/brand-collection.html"><img src="assets/img/index/brand-collection-preview-page.png" alt="brand-collection"></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="main-sale__arrow-slider-left">
-                        <a href=""><img src="/assets/img/arrow-slider.png" alt="arrow-left"></a>
+                    <div class="man-slide">
+                        <div class="man-content">
+                            <div class="man-collection__arrow-slider-left">
+                                <button class="man-slider-left" type="button"><img src="assets/img/index/arrow-slider.png" alt="arrow-left"></button>
+                            </div>
+                            <div class="man-collection">
+                                <p>Мужская</p>
+                                <h1 class="man-collection__title">Коллекция</h1>
+                                <p class="man-collection__brand-name">Название и бренд</p>
+                                <div class="sliders">
+                                    <div class="slider"></div>
+                                    <div class="slider"></div>
+                                    <div class="slider"></div>
+                                </div>
+                                <div class="man-collection-imgs">
+                                    <a href="/collections.html"><img src="assets/img/index/man-slide-sollection-img.png" alt="collection" class="main-collection__img"></a>
+                                <a href="/collections.html"><img src="assets/img/index/man-slide-sollection-img2.png" alt="collection" class="main-collection__img"></a>
+                                </div>
+                            </div>
+                            <div class="man-sale">
+                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
+                                <h1 class="man-sale-title">Топ</h1>
+                            </div>
+                        </div>
+                        <div class="man-additional-content"></div>
                     </div>
-                    <div class="main-sale">
-                        <a href="/sale.html"><img src="/assets/img/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                        <a href="/sale.html"><img src="/assets/img/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                        <a href="/sale.html"><img src="/assets/img/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                        <a href="/sale.html"><img src="/assets/img/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                        <a href="/sale.html"><img src="/assets/img/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                        <h1 class="main-sale-title">Распродажа</h1>
-                        <p class="main-sale-month">Январь</p>
-                    </div>
-                </div>
-                <div class="additional-content">
-                    <div class="new-look">
-                        <h1 class="new-look-title">Новый взгляд</h1>
-                    </div>
-                    <div class="brand-selection">
-                        <h1 class="brand-selection-title">Подборка брендов</h1>
-                        <a href="/brand-collection.html"><img src="/assets/img/brand-collection-page.png" alt="brand-collection"></a>
+                    <div class="woman-slide">
+                        <div class="woman-content">
+                            <div class="woman-collection__arrow-slider-left">
+                                <button class="woman-slider-left" type="button"><img src="assets/img/index/arrow-slider.png" alt="arrow-left"></button>
+                            </div>
+                            <div class="woman-collection">
+                                <p>Мужская</p>
+                                <h1 class="woman-collection__title">Коллекция</h1>
+                                <p class="woman-collection__brand-name">Название и бренд</p>
+                                <div class="sliders">
+                                    <div class="slider"></div>
+                                    <div class="slider"></div>
+                                    <div class="slider"></div>
+                                </div>
+                                <div class="woman-collection-imgs">
+                                    <a href="/collections.html"><img src="assets/img/index/man-slide-sollection-img.png" alt="collection" class="main-collection__img"></a>
+                                <a href="/collections.html"><img src="assets/img/index/man-slide-sollection-img2.png" alt="collection" class="main-collection__img"></a>
+                                </div>
+                            </div>
+                            <div class="woman-sale">
+                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
+                                <h1 class="woman-sale-title">Топ</h1>
+                            </div>
+                        </div>
+                        <div class="woman-additional-content">
+                            <div class="cool-goods">
+                                <p>Прикольные</p>
+                            </div>
+                            <div class="not-good">
+                                <p>Не очень</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
+            <script src="assets/js/slider.js"></script>
+            <footer class="footer">
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-list__item"><a href="#">О нас</a></li>
+                        <li class="footer-nav-list__item"><a href="#">Пользовательское соглашение</a></li>
+                        <li class="footer-nav-list__item"><a href="#">Разместить бренд на сайт</a></li>
+                        <li class="footer-nav-list__item"><a href="#">Поддержка</a></li>
+                    </ul>
+                </nav>
+                <h2 class="footer-left-text">Мода<br>России</h2>
+            </footer>
         </body>
-        <footer class="footer">
-            <nav class="footer-nav">
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-list__item"><a href="#">О нас</a></li>
-                    <li class="footer-nav-list__item"><a href="#">Пользовательское соглашение</a></li>
-                    <li class="footer-nav-list__item"><a href="#">Разместить бренд на сайт</a></li>
-                    <li class="footer-nav-list__item"><a href="#">Поддержка</a></li>
-                </ul>
-            </nav>
-            <h2 class="footer-left-text">Мода<br>России</h2>
-        </footer>
     </div>
 </html>
