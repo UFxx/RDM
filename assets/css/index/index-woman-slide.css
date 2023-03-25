@@ -1,4 +1,4 @@
-/* WOMAN-CONTENT */
+/* woman-CONTENT */
 
 .woman-content {
     display: flex;
@@ -12,18 +12,35 @@
     z-index: 2;
 }
 
-/* WOMAN-COLLECTION */
+/* woman-CONTENT__ITEM */
+
+.woman-content__item {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.woman-content__item img {
+    height: 400px;
+    transition: .3s;
+}
+
+.woman-content__item img:hover {
+    transform: scale(1.03);
+}
+
+/* woman-COLLECTION */
 
 .woman-collection {
-    width: 500px;
-    height: 400px;
+    width: 1120px;
+    height: 470px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 10px;
     overflow: hidden;
     background: url(5575333800_2_4_1.jpg);
+    overflow: hidden;
+    margin-top: 40px;
 }
 
 .woman-collection-imgs {
@@ -31,8 +48,8 @@
 }
 
 .woman-collection img {
-    width: 250px;
-    height: 400px;
+    width: 560px;
+    height: 500px;
     transition: .3s ease;
 }
 
@@ -41,36 +58,42 @@
 }
 
 .woman-collection h1 {
-    top: 70%;
-    margin-left: 15px;
+    position: absolute;
+    top: 69%;
+    margin-left: 100px;
     font-family: 'PT Sans Caption';
     font-style: normal;
     font-weight: 700;
     font-size:  50px;
     line-height: 94px;
+    color: white;
+    text-transform: uppercase;
+    z-index: 2;
 }
 
 .woman-collection p {
     top: 88%;
-    margin-left: 15%;
+    margin-left: 20%;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
+    text-transform: uppercase;
 }
 
 .woman-collection p:first-child {
-    top: 70%;
-    letter-spacing: 5px;
+    top: 67%;
+    left: 10%;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
+    text-transform: uppercase;
 }
 
-/* WOMAN-SALE  */
+/* woman-SALE */
 
 .woman-sale {
     width: 450px;
@@ -119,8 +142,4 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 31px;
-}
-
-.cool-goods {
-    height: 500px;
 }

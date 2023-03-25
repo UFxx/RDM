@@ -151,7 +151,8 @@
     justify-content: center;
     align-items: center;
     z-index: 3;
-    margin-top: 330px;
+    top: 330px;
+    margin-left: 20px;
 }
 
 .man-collection__arrow-slider-left img{
@@ -201,7 +202,7 @@
     justify-content: center;
     align-items: center;
     border: none;
-    margin-left: 1200px;
+    margin-left: 1180px;
     transform: rotate(180deg);
     z-index: 3;
     cursor: pointer;

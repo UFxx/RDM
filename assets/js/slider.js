@@ -27,8 +27,3 @@ document.querySelector('.woman-slider-left').addEventListener('click', function(
     sliderLine.style.left = offset + 'px';
 });
 
-for (let i =0; i < 3 ; i++ ) {
-    let autoSliderOne = setInterval(() =>  mainCollectionSliderLine.style.left = offset + -450 + 'px', 6000);
-    let autoSliderTwo = setInterval(() =>  mainCollectionSliderLine.style.left = offset + -900 + 'px', 18000);
-    let autoSliderThree = setInterval(() =>  mainCollectionSliderLine.style.left = offset + 'px', 24000);
-}
